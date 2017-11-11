@@ -22,11 +22,6 @@ export warnflags = -Wfloat-equal -Wtype-limits -Wpointer-arith -Wlogical-op -Wsh
 LDFLAGS = 
 LDLIBS = 
 
-# Configure build tools to emit code for IA32 architecture by adding the necessary
-# flag to compiler and linker (built on IA32 machine)
-CFLAGS += -m32
-LDFLAGS += -m32
-
 # defines the default build targets
 all:: set_test
 
